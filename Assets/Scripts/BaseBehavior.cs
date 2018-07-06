@@ -34,6 +34,8 @@ namespace Assets.Scripts
             {
                 GameHelper.Hands.Add(item.GetComponent<Hand>().Jokenpo, item);
             }
+
+            ChangeVersionLogo();
         }
         
         protected GameHelper.Jokenpo GetComputerHand()

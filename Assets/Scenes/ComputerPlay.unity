@@ -147,7 +147,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -884.0002, y: 495}
+  m_AnchoredPosition: {x: -679, y: 495}
   m_SizeDelta: {x: 250, y: 200}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &99125884
@@ -1525,6 +1525,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 542eb96596dc2b74a991a3efe07e7e4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefabLogo: {fileID: 1171749970821430, guid: 61080ab486d481a4fbf5f55599d569f2, type: 2}
+  prefabLogoFaded: {fileID: 1171749970821430, guid: a366d7c4416725743b26fc3beb492a01,
+    type: 2}
+  logo_v1: {fileID: 21300000, guid: d93bd78f86e9e2143b661468137a0670, type: 3}
+  logo_v1_2: {fileID: 21300000, guid: 4526a310436a0ab478ad4b3715569483, type: 3}
   P1Hand: {fileID: 1966243811}
   P2Hand: {fileID: 2093729887}
   WinLoseHolder: {fileID: 524003561}
@@ -1537,6 +1542,8 @@ MonoBehaviour:
   - {fileID: 1682062027098842, guid: e8f7bcbeda7391646b0f78032e91e359, type: 2}
   - {fileID: 1120930581022678, guid: 5798a2f9d63c3b8408e875df5ba34115, type: 2}
   - {fileID: 1106670954083572, guid: be4f0f05d2776b74d8194c6ec4ecab1b, type: 2}
+  - {fileID: 1708238951772542, guid: 6790e65adf400f1429cf235796bec8e0, type: 2}
+  - {fileID: 1710192972935818, guid: 04386dea13af5b94fa7716d01aeabc08, type: 2}
 --- !u!1 &1707978933
 GameObject:
   m_ObjectHideFlags: 0
@@ -1659,7 +1666,7 @@ RectTransform:
   m_GameObject: {fileID: 1823601385}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 8.763399, y: 0.912488, z: 1}
+  m_LocalScale: {x: 7.2661943, y: 0.92161286, z: 1.01}
   m_Children: []
   m_Father: {fileID: 1707978934}
   m_RootOrder: 3

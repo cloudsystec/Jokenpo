@@ -1626,6 +1626,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c524bef7f5540c4ea79f6c3a2a2d905, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefabLogo: {fileID: 1171749970821430, guid: 61080ab486d481a4fbf5f55599d569f2, type: 2}
+  prefabLogoFaded: {fileID: 1171749970821430, guid: a366d7c4416725743b26fc3beb492a01,
+    type: 2}
+  logo_v1: {fileID: 21300000, guid: d93bd78f86e9e2143b661468137a0670, type: 3}
+  logo_v1_2: {fileID: 21300000, guid: 4526a310436a0ab478ad4b3715569483, type: 3}
 --- !u!1 &1890931249
 GameObject:
   m_ObjectHideFlags: 0

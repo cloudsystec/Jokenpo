@@ -80,6 +80,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\GameScreen.cs" />
+    <Compile Include="Assets\Scripts\OptionsScreen.cs" />
     <Compile Include="Assets\Scripts\UIBehavior.cs" />
     <Compile Include="Assets\Scripts\PlayerBehavior.cs" />
     <Compile Include="Assets\Scripts\ComputerBehavior.cs" />

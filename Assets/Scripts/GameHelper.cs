@@ -12,7 +12,9 @@ namespace Assets.Scripts
             NONE,
             ROCK,
             PAPER,
-            SCISSOR
+            SCISSOR,
+            LIZZARD,
+            SPOCK
         }
 
         public static decimal Version = 1;
@@ -31,12 +33,36 @@ namespace Assets.Scripts
 
         public static Dictionary<Jokenpo, GameObject> Hands = new Dictionary<Jokenpo, GameObject>();
 
-        public static readonly Dictionary<Jokenpo, IEnumerable<Jokenpo>> WinRules = new Dictionary<Jokenpo, IEnumerable<Jokenpo>>
+        public static Dictionary<Jokenpo, IEnumerable<Jokenpo>> WinRules = new Dictionary<Jokenpo, IEnumerable<Jokenpo>>
         {
             {Jokenpo.PAPER, new []{Jokenpo.ROCK, }},
             {Jokenpo.ROCK, new []{Jokenpo.SCISSOR, }},
             {Jokenpo.SCISSOR, new []{Jokenpo.PAPER, }}
         };
+
+        public static void V1()
+        {
+            Version = 1;
+            WinRules = new Dictionary<Jokenpo, IEnumerable<Jokenpo>>
+            {
+                {Jokenpo.PAPER, new []{Jokenpo.ROCK, }},
+                {Jokenpo.ROCK, new []{Jokenpo.SCISSOR, }},
+                {Jokenpo.SCISSOR, new []{Jokenpo.PAPER, }}
+            };
+        }
+
+        public static void V1_2()
+        {
+            Version = 1.2m;
+            WinRules = new Dictionary<Jokenpo, IEnumerable<Jokenpo>>
+            {
+                {Jokenpo.SCISSOR, new []{Jokenpo.PAPER, Jokenpo.LIZZARD,  }},
+                {Jokenpo.PAPER, new []{Jokenpo.ROCK, Jokenpo.SPOCK,  }},
+                {Jokenpo.ROCK, new []{Jokenpo.LIZZARD,Jokenpo.SCISSOR,  }},
+                {Jokenpo.LIZZARD, new []{Jokenpo.SPOCK, Jokenpo.PAPER,  }},
+                {Jokenpo.SPOCK, new []{Jokenpo.SCISSOR, Jokenpo.ROCK,  }},
+            };
+        }
 
         /// <summary>
         /// ask p1 win p2
