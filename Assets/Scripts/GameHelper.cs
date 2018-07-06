@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Boo.Lang;
+using UnityEngine;
+using UnityEngine.UI;
 
 namespace Assets.Scripts
 {
@@ -8,14 +9,29 @@ namespace Assets.Scripts
     {
         public enum Jokenpo
         {
+            NONE,
             ROCK,
             PAPER,
             SCISSOR
         }
 
-        public static string Version = "V1";
+        public static decimal Version = 1;
+        public static bool SpockLizzardVersion { get { return Version > 1; } }
 
-        private static readonly Dictionary<Jokenpo, IEnumerable<Jokenpo>> WinRules = new Dictionary<Jokenpo, IEnumerable<Jokenpo>>
+        public static int CurrentHand = 0;
+        public static int P1Hand = 0;
+        public static int P2Hand = 0;
+
+        public static void ClearGame()
+        {
+            P1Hand = 0;
+            P2Hand = 0;
+            CurrentHand = 0;
+        }
+
+        public static Dictionary<Jokenpo, GameObject> Hands = new Dictionary<Jokenpo, GameObject>();
+
+        public static readonly Dictionary<Jokenpo, IEnumerable<Jokenpo>> WinRules = new Dictionary<Jokenpo, IEnumerable<Jokenpo>>
         {
             {Jokenpo.PAPER, new []{Jokenpo.ROCK, }},
             {Jokenpo.ROCK, new []{Jokenpo.SCISSOR, }},

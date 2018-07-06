@@ -11,3 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GamePlay.unity
     guid: 0c9db7be37479254ba7d37b017a5fcd7
+  - enabled: 1
+    path: Assets/Scenes/ComputerPlay.unity
+    guid: 8a0eeb7b137bd314d8f744bb4ba8cbf4
+  - enabled: 1
+    path: Assets/Scenes/OptionScreen.unity
+    guid: e115b8588b589604caa9fa1f19fdbca5
